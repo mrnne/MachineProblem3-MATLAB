@@ -1,9 +1,9 @@
 %MACHINE PROBLEM 3
-%python program that will approximate the data according to the least-norm
+%MatLab program that will approximate the data according to the least-norm
 %error vector
 
 %component input must be in the form: component = np.array(([-3,174],[-2,41],[-1,4]))
-function[] = bestfit(component)
+function[] = MP_3(component)
 
 %Setting the coefficients of the first column of the input array to x
 x = component(:,1);
@@ -13,7 +13,7 @@ y = component(:,2);
 
 %Setting the least norm to infinity 
 least = inf;
-format short g
+format short
 
 %looping for i in the degree of x from 0-10
 for i =1:1:10
